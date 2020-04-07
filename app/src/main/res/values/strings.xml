@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Coronavirus Monitoring</string>
+    <string name="world">Dunia</string>
+    <string name="indonesia">Indonesia</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="total_case">Total Kasus</string>
+    <string name="total_cases_of_all_countries">Jumlah Kasus di Berbagai Negara</string>
+    <string name="country_name">Negara</string>
+    <string name="total_cases">Jumlah Kasus</string>
+    <string name="todo">TODO</string>
+    <string name="recovered">Sembuh</string>
+    <string name="infected">Infeksi</string>
+    <string name="death">Meninggal</string>
+    <string name="province_name">Provinsi</string>
+    <string name="total_cases_of_all_provinces">Jumlah Kasus di Berbagai Provinsi</string>
+    <string name="positive">Positif</string>
+</resources>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.33"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.67"/>
+
+    <TextView
+        android:id="@+id/tv_country"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/country_name"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_total_cases"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/total_cases"
+        android:textAlignment="textEnd"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_country"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/guideline2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/img_recovered"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/todo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_country"
+        tools:background="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/tv_recovered"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="@string/recovered"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintStart_toEndOf="@+id/img_recovered"
+        app:layout_constraintTop_toTopOf="@+id/img_recovered" />
+
+    <ImageView
+        android:id="@+id/img_infected"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/todo"
+        app:layout_constraintStart_toStartOf="@id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/tv_country"
+        tools:background="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/tv_infected"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="@string/infected"
+        app:layout_constraintEnd_toStartOf="@+id/guideline4"
+        app:layout_constraintStart_toEndOf="@+id/img_infected"
+        app:layout_constraintTop_toTopOf="@+id/img_recovered" />
+
+    <ImageView
+        android:id="@+id/img_death"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/ic_sentiment_very_dissatisfied_black_24dp"
+        android:contentDescription="@string/todo"
+        app:layout_constraintStart_toStartOf="@id/guideline4"
+        app:layout_constraintTop_toBottomOf="@+id/tv_country"
+        tools:background="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/tv_death"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="@string/death"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/img_death"
+        app:layout_constraintTop_toTopOf="@+id/img_recovered" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="4dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img_recovered" />
+</androidx.constraintlayout.widget.ConstraintLayout>
