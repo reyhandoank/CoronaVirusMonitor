@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Pemantau Coronavirus</string>
+
+    <string name="total_case">Total Kasus</string>
+    <string name="total_cases_of_all_countries">Total Kasus di Setiap Negara</string>
+    <string name="country_name">Negara</string>
+    <string name="total_cases">Total Kasus</string>
+    <string name="todo">TODO</string>
+    <string name="recovered">Sembuh</string>
+    <string name="infected">Kritis</string>
+    <string name="death">Meninggal</string>
+</resources>
